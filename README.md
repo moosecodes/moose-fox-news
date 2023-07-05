@@ -1,19 +1,33 @@
-# Nuxt 3 Minimal Starter
+# Fox News Take Home Excercise
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to Mustafa Ishaq's demonstration repository for Fox News
+
+## Features
+
+- Vue 3 using the Nuxt 3 framework
+- Pinia for Nuxt
+- Uses built in `useFetch` composable to retrive data from an external API
+- Fetched data is passed down as a prop from main App component to a child component
+- The data is presented on the screen using standard Vue directives like `v-if` and `v-for`.
+
+## Extra Feature
+
+There is an additional Shopping cart feature which allows the user to:
+
+- Add/remove items from the cart
+- View the name & individual cost for each item
+- View the number of items added & total price for these items
+
+## Additonal Notes
+
+I was careful not to add too many dependencies, as indicated by the instructions:  I have avoided adding packages like Material UI, TailwindCSS or SASS since it would mean adding more overhead.
+
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
 yarn install
 ```
 
@@ -22,12 +36,6 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
 # yarn
 yarn dev
 ```
@@ -37,27 +45,14 @@ yarn dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
 yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
 # yarn
 yarn preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Moosecodes
