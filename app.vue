@@ -1,9 +1,11 @@
 <template>
   <div>
     <div v-if="data.products">
-      <div v-for="p in data.products" :key="p.id">
-        <ProductInfoCard :product="p" />
-      </div>
+      <ProductInfoCard 
+        v-for="p in data.products" 
+        :key="p.id"
+        :product="p" 
+      />
     </div>
   </div>
 </template>
