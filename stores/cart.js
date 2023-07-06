@@ -5,13 +5,15 @@ export const useCartStore = defineStore('cart', {
     return { items: [] }
   },
   actions: {
-    addToCart(item) {
+    addItem(item) {
         this.items.push(item)
     },
     removeItem(item) {
-      console.log(this.items)
         const index = this.items.indexOf(item)
         if(index > -1) this.items.splice(index, 1)
+    },
+    clear() {
+      this.items = []
     },
   },
 })

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <header>
-      Mustafa Ishaq - Fox News Take Home Excercise
+      Mustafa Ishaq - Fox News
     </header>
     <main>
       <div 
@@ -12,16 +12,14 @@
           v-for="p in data.products" 
           :key="p.id"
           :product="p"
-          class="card"
         />
       </div>
       <ShoppingCart 
         :items="cart.items" 
-        @some-event="someEvent"
-        class="cart" 
+        @clear-cart="clearCart"
+        @remove-item="removeItem"
       />
     </main>
-
   </div>
 </template>
 
@@ -35,17 +33,16 @@
     // handle error
   }
 
-  const someEvent = (itemId) => {
+  const clearCart = () => {
+    cart.clear()
+  }
+
+  const removeItem = (itemId) => {
     cart.removeItem(itemId)
-    console.log(itemId)
   }
 </script>
   
 <style scoped>
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
 header {
   display: flex;
   justify-content: center;
@@ -55,17 +52,21 @@ header {
   color: white;
   padding: 20px;
 }
+
 main {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 10px;
 }
-.card {
-  margin: 10px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 </style>
