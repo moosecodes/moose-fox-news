@@ -6,7 +6,7 @@
       :alt="product.id" 
     />
     <h3>${{ product.price }}</h3>
-    <h4>{{ product.description }}</h4>
+    <h5>{{ product.description }}</h5>
     <p>
       <button 
         @click="addItem(product)"
@@ -31,7 +31,7 @@
 </script>
   
 <style scoped>
-h4 {
+h5 {
   margin: 0 20px 20px 20px;
 }
 
@@ -39,6 +39,7 @@ img {
   max-height: 200px;
   max-width: 100%;
 }
+
 .product--card {
   display: flex;
   flex-direction: column;
@@ -47,5 +48,14 @@ img {
   border: 2px solid black;
   width: 400px;
   margin: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
 }
 </style>

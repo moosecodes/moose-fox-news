@@ -1,25 +1,27 @@
 <template>
-  <div class="wrapper">
+  <div>
+
     <header>
       Mustafa Ishaq - Fox News
     </header>
+
     <main>
-      <div 
-        v-if="data.products" 
-        class="container"
-      >
+      <section v-if="data.products">
         <ProductInfoCard 
           v-for="p in data.products" 
           :key="p.id"
           :product="p"
         />
-      </div>
+      </section>
+
       <ShoppingCart 
         :items="cart.items" 
         @clear-cart="clearCart"
         @remove-item="removeItem"
       />
+
     </main>
+
   </div>
 </template>
 
@@ -42,7 +44,11 @@
   }
 </script>
   
-<style scoped>
+<style>
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -58,15 +64,10 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 10px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
 }
 </style>
