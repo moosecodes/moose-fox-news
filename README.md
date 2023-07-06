@@ -7,12 +7,11 @@ Welcome to Mustafa Ishaq's demonstration repository for Fox News.  This applicat
 ## Features
 
 - Vue 3 using the Nuxt 3 framework
-- Pinia for Nuxt
-- Uses built in `useFetch` composable to retrive data from an external API
+- State management using Pinia
+- Uses built-in `useFetch` composable to retrive data from an external API
 - Fetched data is passed down as a prop from main App component to a child component
-- The data is presented on the screen using standard Vue directives like `v-if` and `v-for`.
 
-## Extra Feature
+## Extra Feature (Shopping Cart)
 
 There is an additional Shopping cart feature which allows the user to:
 
