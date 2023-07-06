@@ -1,6 +1,8 @@
 # Fox News Take Home Excercise
 
-Welcome to Mustafa Ishaq's demonstration repository for Fox News
+Welcome to Mustafa Ishaq's demonstration repository for Fox News.  This application pulls in data from `https://dummyjson.com/products` and parses the information into the view.  This application also manages application state via a store made with Pinia for Nuxt.
+
+<img width="500" alt="image" src="https://github.com/moosecodes/moose-fox-news/assets/16247040/ed25692b-b22d-49cc-86a8-bc89891e0151">
 
 ## Features
 
